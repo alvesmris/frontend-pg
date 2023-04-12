@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: brown;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 100px 1fr 100px;
+    padding-left: 96px;
+    padding-right: 96px;
+}
+
+header{
+    text-align: center;
+}
+
+footer{
+    text-align: end;
+}
+
+.galeria{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+        "f1 f1 f1 f1 f1 f2 f2 f2 f3 f3 f3"
+        "f1 f1 f1 f1 f1 f4 f4 f4 f5 f5 f5"
+        "f6 f6 f6 f7 f7 f7 f8 f8 f8 f8 f8";
+    gap: 12px;
+
+}
+
+.foto{
+    position: relative;
+    box-shadow: 0px 0px 4px black;
+    cursor: pointer;
+    overflow: hidden;
+    color: snow;
+}
+.foto:nth-child(1){
+    grid-area: f1;
+    background-image: url(./🫶🏻.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.foto:nth-child(2){
+    grid-area: f2;
+    background-image: url(./lorelai\ and\ rory.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.foto:nth-child(3){
+    grid-area: f3;
+    background-image: url(./livros.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.foto:nth-child(4){
+    grid-area: f4;   
+    background-image: url(./OCTOBER\ FIRSTTT🎃🎃.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.foto:nth-child(5){
+    grid-area: f5;
+    background-image: url(./rory\ azul.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.foto:nth-child(6){
+    grid-area: f6;
+    background-image: url(./outono.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.foto:nth-child(7){
+    grid-area: f7;
+    background-image: url(./rory\ cabelo\ preso.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.foto:nth-child(8){
+    grid-area: f8;
+    background-image: url(./folhas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.foto__info{
+    position: absolute;
+    width: 100%;
+    height: 46px;
+    bottom: 0;
+    background-color: #0009;
+    transform: translateY(100%);
+    transition: 1s;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+img[alt~="botao"] {
+    height: 40%;
+    width: auto;
+}
+
+.foto:hover > .foto__info {
+    transform: translateY(0%);
+}
+
+@media (max-width:768px){
+    body{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+.galeria{
+    display: flex;
+    flex-direction: column;
+}
+.foto{
+    width: 100%;
+    height: 33vh;
+}
+}
+.comprar {
+    display: grid;
+    place-items: center;
+    align-items: center;
+}
+
+.comprar a {
+    display: grid;
+    place-items: center;
+    align-items: center;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao{
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    font-size: 1.3em;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.botao p{
+    color: rgb(0, 0, 0);
+    font-size: medium;
+}
+
+P1{
+    color: cornsilk;
+}
